@@ -3,7 +3,7 @@
 %define gitauthor rgrove
 %define gitproject sanitize
 
-Summary:	Ruby interface to Git
+Summary:	Whitelist-based Ruby HTML sanitizer
 Name:		ruby-sanitize
 Version:	1.2.1
 Release:	1
@@ -21,13 +21,7 @@ BuildRequires:	setup.rb = 3.4.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Grit gives you object oriented read/write access to Git repositories
-via Ruby. The main goals are stability and performance. To this end,
-some of the interactions with Git repositories are done by shelling
-out to the system's `git` command, and other interactions are done
-with pure Ruby reimplementations of core Git functionality. This
-choice, however, is transparent to end users, and you need not know
-which method is being used.
+Whitelist-based Ruby HTML sanitizer.
 
 %prep
 %setup -q -n %{gitauthor}-%{gitproject}-%{gitrev}
